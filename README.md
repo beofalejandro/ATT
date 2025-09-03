@@ -7,9 +7,9 @@ Release Date: 2025-08-28
 -----
 **IMPORTANT:** You have been authenticated to acccess to reosurce.
 
-**HINT:** if you prefer you could save all reports in the following path `path will be added`
+**HINT:** if you prefer you could save all reports in the following path `\\tsclient\C\Users\aq7357\Downloads`
 
-## Cyberark Oracle DRA'S IP's
+## Oracle DRA'S IP's - Cyberark Access
 
 ***HEADER CLAVE*** Refers a **MASTER IP**
 
@@ -23,7 +23,7 @@ Release Date: 2025-08-28
 |TLADRA01MMSOAMVIP|10.32.210.102||TOLDRA01PCSOAMVIP|10.150.23.73||||
 |TOLDRA01MMSOAMVIP|10.150.24.8|||||||
 
-## Cyberark Ericksson ENM'S IP'S
+## Ericksson ENM'S IP'S - Cyberark Access
 
 |10.150.131.14|
 |-|
@@ -32,3 +32,37 @@ Release Date: 2025-08-28
 Comand used in ericksson terminal
 
 `cmedit get * networkelement.* -d`
+
+## Nakina Naranja IP'S - Remote Desktop Access
+
+Credentials
+|Username|Password|
+|-|-|
+|ns.nknatt.com\aq7357|`ATT Global Password`|
+
+|10.32.218.46|
+|-|
+|10.32.14.202 *No works*|
+
+|10.32.218.46||
+|-|-|
+|MAE#|IP|
+|||
+|MAE1|10.150.206.5|
+|MAE2|10.150.206.69|
+|MAE3|10.150.208.133|
+|MAE4|10.150.208.197|
+|MAE5|10.150.212.133|
+
+## NetAct IP'S - Cyberark Access
+
+IP´S will be added
+
+### Filtres Types
+%WBTS%
+%LNBTS%
+%NRBTS%
+
+
+### Nomenclature
+`BD NetAct %##BTS% 20240418`
