@@ -56,13 +56,45 @@ Credentials
 
 ## NetAct IP'S - Cyberark Access
 
-IP´S will be added
+
+|10.32.228.183|
+|-|
+
+### **IMPORTANT** - Use instructons
+
+To access a nectact you must follow the following instructions
+
+### Step 1
+
+you must go tho the following path just next signed in
+
+`Monitoring > Monitor`
+
+
+### Step 2
+
+after you click on `Monitoring`, save start as `jnlp` extension in anywere place in your instance, the file will se like
+
+`start.jnlp`
+
+after that, will show a sucessfully downloaded message in you screen, open the file
+
+### Step 3
+Next to move on the `Tools > Managed Objects > Object Seach`
 
 ### Filtres Types
-%WBTS%
-%LNBTS%
-%NRBTS%
+
+`%WBTS%`
+
+`%LNBTS%`
+
+`%NRBTS%`
 
 
 ### Nomenclature
+
 `BD NetAct %##BTS% 20240418`
+
+---
+
+Made with ❤️ by Alejandro Barrientos Escalante and ESCALIA Corporation
