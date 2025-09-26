@@ -36,6 +36,7 @@ Comand used in ericksson terminal
 ## Nakina Naranja IP'S - Remote Desktop Access
 
 Credentials
+
 |Username|Password|
 |-|-|
 |ns.nknatt.com\aq7357|`ATT Global Password`|
@@ -56,7 +57,6 @@ Credentials
 
 ## NetAct IP'S - Cyberark Access
 
-
 |10.32.228.183|
 |-|
 
@@ -70,7 +70,6 @@ you must go tho the following path just next signed in
 
 `Monitoring > Monitor`
 
-
 ### Step 2
 
 after you click on `Monitoring`, save start as `jnlp` extension in anywere place in your instance, the file will se like
@@ -80,6 +79,7 @@ after you click on `Monitoring`, save start as `jnlp` extension in anywere place
 after that, will show a sucessfully downloaded message in you screen, open the file
 
 ### Step 3
+
 Next to move on the `Tools > Managed Objects > Object Seach`
 
 ### Filtres Types
@@ -90,11 +90,10 @@ Next to move on the `Tools > Managed Objects > Object Seach`
 
 `%NRBTS%`
 
-
 ### Nomenclature
 
 `BD NetAct %##BTS% 20240418`
 
----
+-----
 
 Made with ❤️ by Alejandro Barrientos Escalante and ESCALIA Corporation
