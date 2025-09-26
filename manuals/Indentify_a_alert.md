@@ -9,4 +9,4 @@
 - Step 5: Open any alarm
 - Step 6: See the **MVNO**, **KPI**, **Change valor** and **Location ID**
 - Step 7: Lets Move on `Performance > Querry Result`  on the **Header menu**
-- Step 8 
+- Step 8: 
