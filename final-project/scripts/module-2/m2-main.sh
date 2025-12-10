@@ -36,13 +36,11 @@ while true; do
     sleep 1
     echo -e "${BASE}${RESET}"
     echo "                                                                                   "
-    echo "                              M E N U  M O D U L E  1                              "
+    echo "                              M E N U  M O D U L E  2                              "
     echo "                                                                                   "
     echo "   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   "
     echo "                                                                                   "
-    echo "   1   |   P R I N T  A N Y  T E X T                                               "
-    echo "   2   |   P R I N T  A N Y  F I L E                                               "
-    echo "   3   |   P E R M I S S I O N S  (C H M O D)                                      "
+    echo "   1   |   V A R I A B L E S                                                       "
     echo "                                                                                   "
     echo "   X   |   G O  B A C K                                                            "
     echo "                                                                                   "
@@ -55,13 +53,7 @@ while true; do
 
     case $option in 
         1) 
-            bash ./scripts/module-1/cat-text.sh
-            ;;
-        2) 
-            bash ./scripts/module-1/cat-file.sh 
-            ;;
-        3) 
-            bash ./scripts/module-1/chmod.sh
+            bash ./scripts/module-2/variables.sh
             ;;
         *)
             echo -e "${RED}[ERROR] INVALID OPTION${RESET}"

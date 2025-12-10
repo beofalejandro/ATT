@@ -5,33 +5,30 @@
 #
 #
 # COLOR
-BASE=""
-EMPHASIS=""
-OPERATION=""
-RED=""
-YELLOW=""
-GREEN=""
-
-
-VERDE="\e[1;32m"
-ROJO="\e[1;31m"
-CYAN="\e[1;36m"
-BLANCO="\e[1;37m"
-RESET="\e[0m"
+BASE="\033[38;5;15m"
+EMPHASIS="\033[38;5;128m"
+OPERATION="\033[38;5;45m"
+RED="\033[38;5;196m"
+YELLOW="\033[38;5;226m"
+GREEN="\033[38;5;42m"
+LOGO="\033[38;5;198m"
+INFO="\033[38;5;45m"
+SUGGESTION="\033[38;5;55m"
+FILE_CONTENT="\033[38;5;253m"
 
 # Barra de carga falsa
 loading_bar() {
-    echo -ne "${CYAN}[*] Initializing modules and tools...${RESET} "
+    echo -ne "${OPERATION}[*] Initializing modules and tools...${RESET} "
     for i in {1..20}; do
         echo -ne "▓"
         sleep 0.07
     done
-    echo -e " ${VERDE}[OK]${RESET}"
+    echo -e " ${GREEN}[OK]${RESET}"
 }
 
 clear
 
-echo -e "${VERDE}"
+echo -e "${LOGO}"
 cat << "EOF"
  _____ ____   ____    _    _     ___    _    
 | ____/ ___| / ___|  / \  | |   |_ _|  / \   
@@ -40,21 +37,19 @@ cat << "EOF"
 |_____|____/ \____/_/   \_\_____|___/_/   \_\  v1.0
 EOF
 echo -e "${RESET}"
-
-echo -e "${VERDE}=============================================================================${RESET}"
-echo -e "${BLANCO}Target: ${ROJO}SYSTEM_ROOT${BLANCO} | Mode: ${VERDE}ACTIVE${RESET}"
-echo -e "${VERDE}=============================================================================${RESET}"
+echo -e "${GREEN}=============================================================================${RESET}"
 echo ""
 
 # Loading bar
 loading_bar
 echo ""
 sleep 0.5
-echo -e "${BLANCO}[INFO] FOR BEST RESULTS USE THE SHELL IN FULLSCREEN${RESET}"
+echo -e "${INFO}[INFO] FOR BEST RESULTS USE THE SHELL IN FULLSCREEN${RESET}"
 echo ""
-echo -e "${VERDE}=============================================================================${RESET}"
+echo -e "${GREEN}=============================================================================${RESET}"
 while true; do
     sleep 1
+    echo -e "${BASE}${RESET}"
     echo "                                                                                   "
     echo "                                      M E N U                                      "
     echo "                                                                                   "
@@ -77,25 +72,22 @@ while true; do
     read -p "Into you option: " option
 
     if [[ "$option" == "x" || "$option" == "X" ]]; then 
-        echo "Good bye then"
+        echo "[INFO] Good bye"
         break
     fi
 
     case $option in 
         1) 
-            echo "Starting 1"
             bash ./scripts/module-1/m1-main.sh
             ;;
-        1) 
-            echo "Starting 1"
-            date
+        2) 
+            bash ./scripts/module-2/m2-main.sh
             ;;
-        1) 
-            echo "Starting 1"
+        3) 
             date
             ;;
         *)
-            echo "⚠️ El número $opcion no es una opción válida del menú."
+            echo -e "${RED}[ERROR] INVALID OPTION${RESET}"
             ;;
     esac    
 
