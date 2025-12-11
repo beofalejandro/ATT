@@ -3,6 +3,7 @@
 - Author: [Alejandro Barrientos Escalante](https://github.com/beofalejandro)
 - Version: 1.9.0
 - Date: 2025-12-10
+- Repository: [ATT](https://github.com/beofalejandro/ATT/tree/script-shell)
 
 Bienvenido al repositorio de ejercicios prácticos. Esta colección de scripts está diseñada para acompañar el curso teórico, proporcionando experiencia práctica desde la navegación básica hasta la automatización avanzada y seguridad.
 
