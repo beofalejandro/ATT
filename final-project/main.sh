@@ -90,6 +90,18 @@ while true; do
         5) 
             bash ./scripts/module-5/m5-main.sh
             ;;
+        6) 
+            bash ./scripts/module-6/m6-main.sh
+            ;;
+        7) 
+            bash ./scripts/module-7/m7-main.sh
+            ;;
+        8) 
+            bash ./scripts/module-8/m8-main.sh
+            ;;
+        9) 
+            bash ./scripts/module-9/m9-main.sh
+            ;;
         *)
             echo -e "${RED}[ERROR] INVALID OPTION${RESET}"
             ;;
