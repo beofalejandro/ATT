@@ -36,17 +36,17 @@ while true; do
     sleep 1
     echo -e "${BASE}${RESET}"
     echo "                                                                                   "
-    echo "                              M E N U  M O D U L E  1                              "
+    echo "                              M E N U  M O D U L E  3                              "
     echo "                                                                                   "
     echo "   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   "
     echo "                                                                                   "
-    echo "   1   |   P R I N T  A N Y  T E X T                                               "
-    echo "   2   |   P R I N T  A N Y  F I L E                                               "
-    echo "   3   |   P E R M I S S I O N S  (C H M O D)                                      "
+    echo "   1   |   S P E C I A L   V A R I A B L E S  ( \$@ , \$# )                        "
+    echo "   2   |   A R R A Y S   ( L I S T S )                                             "
+    echo "   3   |   S T R I N G   M A N I P U L A T I O N                                   "
     echo "                                                                                   "
-    echo "   X   |   G O  B A C K                                                            "
+    echo "   X   |   G O   B A C K                                                           "
     echo "                                                                                   "
-
+    
     read -p "Type your option: " option
 
     if [[ "$option" == "x" || "$option" == "X" ]]; then 
@@ -55,13 +55,13 @@ while true; do
 
     case $option in 
         1) 
-            bash ./scripts/module-1/cat-text.sh
+            bash ./scripts/module-3/spc-var.sh
             ;;
         2) 
-            bash ./scripts/module-1/cat-file.sh 
+            bash ./scripts/module-3/arrays.sh 
             ;;
         3) 
-            bash ./scripts/module-1/chmod.sh
+            bash ./scripts/module-3/string.sh
             ;;
         *)
             echo -e "${RED}[ERROR] INVALID OPTION${RESET}"

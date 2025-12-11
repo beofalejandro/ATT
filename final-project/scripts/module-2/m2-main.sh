@@ -40,12 +40,14 @@ while true; do
     echo "                                                                                   "
     echo "   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   "
     echo "                                                                                   "
-    echo "   1   |   V A R I A B L E S                                                       "
+    echo "   1   |   V A R I A B L E S   &   A R R A Y S                               "
+    echo "   2   |   A R I T H M E T I C   C A L C U L A T O R                         "
+    echo "   3   |   S T R I N G   M A N I P U L A T I O N                             "
     echo "                                                                                   "
     echo "   X   |   G O  B A C K                                                            "
     echo "                                                                                   "
 
-    read -p "Into you option: " option
+    read -p "Type your option: " option
 
     if [[ "$option" == "x" || "$option" == "X" ]]; then 
         break
@@ -54,6 +56,12 @@ while true; do
     case $option in 
         1) 
             bash ./scripts/module-2/variables.sh
+            ;;
+        2)
+            bash ./scripts/module-2/arithmetic.sh
+            ;;
+        3)
+            bash ./scripts/module-2/string.sh
             ;;
         *)
             echo -e "${RED}[ERROR] INVALID OPTION${RESET}"

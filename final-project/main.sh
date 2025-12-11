@@ -16,7 +16,6 @@ INFO="\033[38;5;45m"
 SUGGESTION="\033[38;5;55m"
 FILE_CONTENT="\033[38;5;253m"
 
-# Barra de carga falsa
 loading_bar() {
     echo -ne "${OPERATION}[*] Initializing modules and tools...${RESET} "
     for i in {1..20}; do
@@ -64,12 +63,11 @@ while true; do
     echo "   7   |   M O D U L E  7                                                          "
     echo "   8   |   M O D U L E  8                                                          "
     echo "   9   |   M O D U L E  9                                                          "
-    echo "   10  |   P R A C T I C A L  A P P L I C A T I O N S                              "
     echo "                                                                                   "
     echo "   X   |   E X I T                                                                 "
     echo "                                                                                   "
 
-    read -p "Into you option: " option
+    read -p "Type your option: " option
 
     if [[ "$option" == "x" || "$option" == "X" ]]; then 
         echo "[INFO] Good bye"
@@ -84,7 +82,13 @@ while true; do
             bash ./scripts/module-2/m2-main.sh
             ;;
         3) 
-            date
+            bash ./scripts/module-3/m3-main.sh
+            ;;
+        4) 
+            bash ./scripts/module-4/m4-main.sh
+            ;;
+        5) 
+            bash ./scripts/module-5/m5-main.sh
             ;;
         *)
             echo -e "${RED}[ERROR] INVALID OPTION${RESET}"

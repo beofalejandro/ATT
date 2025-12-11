@@ -36,17 +36,17 @@ while true; do
     sleep 1
     echo -e "${BASE}${RESET}"
     echo "                                                                                   "
-    echo "                              M E N U  M O D U L E  1                              "
+    echo "                              M E N U  M O D U L E  4                              "
     echo "                                                                                   "
     echo "   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   --   "
     echo "                                                                                   "
-    echo "   1   |   P R I N T  A N Y  T E X T                                               "
-    echo "   2   |   P R I N T  A N Y  F I L E                                               "
-    echo "   3   |   P E R M I S S I O N S  (C H M O D)                                      "
+    echo "   1   |   C O N D I T I O N A L S   ( I F / E L S E )                             "
+    echo "   2   |   L O O P   C O N T R O L                                                 "
+    echo "   3   |   W H I L E   L O O P                                                     "
     echo "                                                                                   "
-    echo "   X   |   G O  B A C K                                                            "
+    echo "   X   |   G O   B A C K                                                           "
     echo "                                                                                   "
-
+    
     read -p "Type your option: " option
 
     if [[ "$option" == "x" || "$option" == "X" ]]; then 
@@ -55,13 +55,13 @@ while true; do
 
     case $option in 
         1) 
-            bash ./scripts/module-1/cat-text.sh
+            bash ./scripts/module-4/conditionals.sh
             ;;
         2) 
-            bash ./scripts/module-1/cat-file.sh 
+            bash ./scripts/module-4/loop_control.sh 
             ;;
         3) 
-            bash ./scripts/module-1/chmod.sh
+            bash ./scripts/module-4/while_loop.sh
             ;;
         *)
             echo -e "${RED}[ERROR] INVALID OPTION${RESET}"
